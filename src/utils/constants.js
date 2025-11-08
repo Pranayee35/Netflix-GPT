@@ -4,7 +4,7 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MDA0YWI0NzNjYTE2MjdiMGJhNmVlYzY1MTRlOGFkNSIsIm5iZiI6MTc2MTY2ODc4My44OTkwMDAyLCJzdWIiOiI2OTAwZWVhZjk5Mjc2NTliYzNiYmZjMDYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.zfRUIRdNfXF4FU1EeQR25w_PBS2IgHd5g5iRAq7RhSg',
+    Authorization: `Bearer ${process.env.REACT_APP_TMDB_API_KEY}`,
   }
 };
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/"
@@ -16,3 +16,4 @@ export const supported_lang = [
 
 ];
 export const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
+export const FIREBASE_KEY = process.env.REACT_APP_FIREBASE_API_KEY;
