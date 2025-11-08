@@ -23,13 +23,14 @@ const VideoTrailer = ({id}) => {
       <div className='w-full h-[90vh] relative mb-0 pb-0'>
     
       <iframe
-       className='absolute top-0 left-0 w-full h-full object-cover scale-125 -mt-36 md:-mt-0'
-        src={`https://www.youtube.com/embed/${trailerId}?autoplay=1&mute=1`}
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
+  className="absolute top-0 left-0 w-full h-full object-cover scale-125 -mt-36 md:-mt-0 border-0 outline-0"
+  src={`https://www.youtube.com/embed/${trailerId}?autoplay=1&mute=1&loop=1&playlist=${trailerId}&controls=0&modestbranding=1&rel=0&showinfo=0`}
+  title="YouTube video player"
+  frameBorder="0"
+  allow="autoplay; fullscreen"
+  referrerPolicy="strict-origin-when-cross-origin"
+></iframe>
+
    
   </div>
   )
